@@ -3,11 +3,11 @@
 [![Gem Version](https://badge.fury.io/rb/capistrano-scm-strategy.png)](http://badge.fury.io/rb/capistrano-scm-strategy)
 [![Code Climate](https://codeclimate.com/github/tiredpixel/capistrano-scm-strategy.png)](https://codeclimate.com/github/tiredpixel/capistrano-scm-strategy)
 
-[Capistrano](http://capistranorb.com/) SCM strategies (sparse).
+[Capistrano](http://capistranorb.com/) SCM strategies (shallow).
 
 Capistrano SCM Strategy is a home for additional strategies utilising
 Capistrano's pluggable strategy approach. Only Capistrano 3 is supported.
-Currently, the only strategy is `Git::Sparse`. But why not blend your magic? :)
+Currently, the only strategy is `Git::Shallow`. But why not blend your magic? :)
 
 More sleep lost by [tiredpixel](http://www.tiredpixel.com).
 
@@ -31,7 +31,7 @@ Require all strategies (they are namespaced so don't fret :) ):
 
 Choose a strategy using Capistrano's pluggable nature:
 
-    set :git_strategy, Capistrano::Scm::Strategy::Git::Sparse
+    set :git_strategy, Capistrano::Scm::Strategy::Git::Shallow
 
 The strategy option is named `:SCM_strategy`, where `SCM` is the SCM set or
 defaulted by `:scm`. So, for Subversion, use `:svn_strategy`.
@@ -43,8 +43,8 @@ That's it!
 
 These strategies are available:
 
-- `Capistrano::Scm::Strategy::Git::Sparse` :
-  A sparse Git strategy.
+- `Capistrano::Scm::Strategy::Git::Shallow` :
+  A shallow Git strategy.
 
 
 ## Stay Tuned
@@ -63,11 +63,11 @@ on GitHub. And don't forget you can become a [stargazer](https://github.com/tire
 
 Dear Me, Here is a vague wishlist:
 
-- `Capistrano::Scm::Strategy::Hg::Sparse` :
-  A sparse Mercurial strategy.
+- `Capistrano::Scm::Strategy::Hg::Shallow` :
+  A shallow Mercurial strategy.
 
-- `Capistrano::Scm::Strategy::Svn::Sparse` :
-  A sparse Subversion strategy.
+- `Capistrano::Scm::Strategy::Svn::Shallow` :
+  A shallow Subversion strategy.
 
 Also take a look at the [issue tracker](https://github.com/tiredpixel/capistrano-scm-strategy/issues).
 
