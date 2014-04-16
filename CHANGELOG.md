@@ -8,3 +8,8 @@ For a full list of changes, consult the commit history.
 
 - first release!
 - new sparse Git strategy (`Git::Sparse`)
+
+
+## 0.2.0
+
+- [#1] fix 'sparse' to 'shallow' throughout; there is no sparse strategy (oop!)

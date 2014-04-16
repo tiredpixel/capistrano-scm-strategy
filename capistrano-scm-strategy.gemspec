@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Capistrano::Scm::Strategy::VERSION
   spec.authors       = ["tiredpixel"]
   spec.email         = ["tp@tiredpixel.com"]
-  spec.summary       = %q{Capistrano SCM strategies (sparse).}
+  spec.summary       = %q{Capistrano SCM strategies (shallow).}
   spec.description   = %q{}
   spec.homepage      = "https://github.com/tiredpixel/capistrano-scm-strategy"
   spec.license       = "MIT"

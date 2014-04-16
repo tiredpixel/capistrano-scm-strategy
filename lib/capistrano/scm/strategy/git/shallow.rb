@@ -1,13 +1,13 @@
 require 'capistrano/git'
 
 
-# A sparse Git strategy for Capistrano.
+# A shallow Git strategy for Capistrano.
 # SEE: Capistrano::Git::DefaultStrategy
 module Capistrano
   module Scm
     module Strategy
       module Git
-        module Sparse
+        module Shallow
           
           def test
             test! " [ -f #{repo_path}/HEAD ] "
